@@ -290,86 +290,27 @@ a {
 }
 
 /* =========================
-   Loading
-    gap: 16px;
-    padding: 18px 16px;
-  }
-
-  .application-main {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .application-info {
-    min-width: 0;
-  }
-
-  .company-name,
-  .application-position,
-  .application-location {
-    overflow-wrap: anywhere;
+   Loading and Errors
+========================= */
 
 .loading {
-  min-height: 100vh;
+  min-height: 240px;
   display: flex;
-    justify-content: flex-start;
-    gap: 8px;
-  }
-
-  .application-meta {
-    width: 100%;
-    align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  font-size: 18px;
+  color: #64748b;
+  font-size: 1.05rem;
 }
-
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .search-input,
-  .status-filter {
-    width: 100%;
-    min-height: 46px;
-/* =========================
-   Error Message
-========================= */
 
 .error-message {
   padding: 12px 16px;
   margin-bottom: 20px;
-
-  .dashboard-header .add-button {
-    width: 100%;
-  }
-
-  .modal-overlay {
-    align-items: flex-end;
-    padding: 0;
-  }
-
-  .modal {
-    max-height: 94vh;
-    padding: 22px 18px;
-    border-radius: 18px 18px 0 0;
-  }
-
-  .form-actions {
-    position: sticky;
-    bottom: -22px;
-    margin: 20px -18px -22px;
-    padding: 14px 18px;
-    background: white;
-    border-top: 1px solid #e2e8f0;
-  }
-
-  .form-actions button {
-    flex: 1;
-    min-height: 44px;
   border-radius: 8px;
   background: #fee2e2;
   color: #b91c1c;
 }
+
+@media (max-width: 520px) {
   .auth-illustration-panel {
     min-height: 250px;
     padding: 28px 20px;
@@ -424,10 +365,6 @@ a {
     padding: 9px 12px;
   }
 
-
-/* =========================
-   Navbar
-
   .dashboard-header h1 {
     font-size: 1.9rem;
   }
@@ -437,6 +374,67 @@ a {
     width: 44px;
     height: 44px;
   }
+
+  .application-card {
+    gap: 16px;
+    padding: 18px 16px;
+  }
+
+  .application-main,
+  .application-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .company-name,
+  .application-position,
+  .application-location {
+    overflow-wrap: anywhere;
+  }
+
+  .application-meta {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .search-input,
+  .status-filter {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .dashboard-header .add-button {
+    width: 100%;
+  }
+
+  .modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal {
+    max-height: 94vh;
+    padding: 22px 18px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .form-actions {
+    position: sticky;
+    bottom: -22px;
+    margin: 20px -18px -22px;
+    padding: 14px 18px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .form-actions button {
+    flex: 1;
+    min-height: 44px;
+  }
+}
+
+/* =========================
+   Navbar
 ========================= */
 
 .navbar {
@@ -918,5 +916,4 @@ a {
   .auth-card {
     padding: 25px;
   }
-}
 }
