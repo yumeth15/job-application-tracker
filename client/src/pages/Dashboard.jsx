@@ -17,7 +17,7 @@ const FILTERS = ["All", "Applied", "Interview", "Rejected", "Offer"];
 
 function Dashboard() {
   const navigate = useNavigate();
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [applications, setApplications] = useState([]);
   const [selectedStatus, setSelectedStatus] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
@@ -110,7 +110,6 @@ function Dashboard() {
         </div>
 
         <div className="navbar-user">
-          <span className="user-pill">{user?.name || "User"}</span>
           <button className="logout-button" onClick={handleLogout}>
             Logout
           </button>
