@@ -232,32 +232,105 @@ a {
   }
 
   .auth-illustration-panel {
-    min-height: 320px;
+    min-height: 280px;
+    padding: 38px 30px;
+  }
+
+  .auth-illustration-panel h1 {
+    max-width: 680px;
+  }
+
+  .auth-illustration-panel p {
+    max-width: 650px;
   }
 }
 
 @media (max-width: 520px) {
   .auth-panel {
-    padding: 24px 18px;
+    height: auto;
+    min-height: 76px;
+    padding: 14px 20px;
+    gap: 16px;
+  }
+
+  .navbar h2 {
+    font-size: 1.3rem;
+  }
+
+  .navbar-user {
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .user-pill {
+    max-width: 30vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .logout-button,
+  .add-button {
+    min-height: 44px;
+  }
+
+  .dashboard-container {
+    padding: 28px 16px 44px;
   }
 
   .auth-card {
     padding: 24px 18px;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .stat-card {
+    padding: 18px 16px;
   }
 }
 
 /* =========================
    Loading
-========================= */
+    gap: 16px;
+    padding: 18px 16px;
+  }
+
+  .application-main {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .application-info {
+    min-width: 0;
+  }
+
+  .company-name,
+  .application-position,
+  .application-location {
+    overflow-wrap: anywhere;
 
 .loading {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .application-meta {
+    width: 100%;
+    align-items: flex-start;
   justify-content: center;
   font-size: 18px;
 }
 
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .search-input,
+  .status-filter {
+    width: 100%;
+    min-height: 46px;
 /* =========================
    Error Message
 ========================= */
@@ -265,13 +338,105 @@ a {
 .error-message {
   padding: 12px 16px;
   margin-bottom: 20px;
+
+  .dashboard-header .add-button {
+    width: 100%;
+  }
+
+  .modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal {
+    max-height: 94vh;
+    padding: 22px 18px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .form-actions {
+    position: sticky;
+    bottom: -22px;
+    margin: 20px -18px -22px;
+    padding: 14px 18px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .form-actions button {
+    flex: 1;
+    min-height: 44px;
   border-radius: 8px;
   background: #fee2e2;
   color: #b91c1c;
 }
+  .auth-illustration-panel {
+    min-height: 250px;
+    padding: 28px 20px;
+  }
+
+  .auth-illustration-panel h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  .auth-illustration-panel p {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .feature-list {
+    margin-top: 18px;
+    gap: 10px;
+  }
+
+  .feature-item {
+    font-size: 0.9rem;
+  }
+
+  .auth-form-panel {
+    align-items: flex-start;
+  }
+
+  .auth-panel {
+    padding: 22px 16px;
+  }
+
+  .auth-card {
+    padding: 24px 18px;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .navbar-user {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .user-pill {
+    max-width: 42vw;
+  }
+
+  .logout-button {
+    padding: 9px 12px;
+  }
+
 
 /* =========================
    Navbar
+
+  .dashboard-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .company-icon {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+  }
 ========================= */
 
 .navbar {
@@ -753,4 +918,5 @@ a {
   .auth-card {
     padding: 25px;
   }
+}
 }
